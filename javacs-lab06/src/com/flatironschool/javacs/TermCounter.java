@@ -36,8 +36,11 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
+		int counter = 0;
+        	for(String s: map.keySet()){
+			counter = counter + map.get(s);
+		}
+		return counter;
 	}
 
 	/**
